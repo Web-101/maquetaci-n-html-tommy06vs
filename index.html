@@ -1,97 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-Bo">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Block-Club</title>
+    <title>Block - Club</title>
+    <meta name="autor" content="Usuario desconocido">
+    <meta name="description" content="Es un vistazo de los placeres de leer.">
+
+    <meta property="og:url" content="https://web-101.github.io/maquetaci-n-html-tommy06vs/">
+    <meta property="og:title" content="Block-Club - Diario vivir">
+    <meta property="og.image"
+        content="https://github.com/Web-101/maquetaci-n-html-tommy06vs/blob/main/imagen/libros.jpg">
+    <meta property="og.description" content="Es un vistazo de los placeres de leer.">
+    <meta property="og.type" content="website">
+    <link rel="shortcut icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZNnLbkv8G4aZran467inRGtZFdF6DWR9_3A&s">
+
+    <style>
+        article,
+        footer {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <p><strong>* Block Club</strong> </p>
-        <nav>
-            <ul style="list-style-type:none;">
-                <li>
-                    <a href="#">
-                        Inicio
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Libros
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Eventos 
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Contactos
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <mark> Unirse</mark>
-        <img
-        src="imagen/perfil.png"
-        alt=""
-        width="20">
-    </header>
-    <nav>
+        <table>
+            <tr>
+                <td>
+                    <p><strong>* Block Club</strong> </p>
+                </td>
 
-    </nav>
+                <td>
+                    <nav>
+                        <a href="#">Inicio</a>
+                        <a href="#">Libros</a>
+                        <a href="#">Eventos</a>
+                        <a href="#">Contactos</a>
+                    </nav>
+                </td>
+                <td>
+                    <a href="#">
+                        <mark> Unirse</mark>
+                    </a>
+                </td>
+
+                <td>
+                    <img src="imagen/perfil.png" alt="perfil de usuario" width="20">
+                </td>
+            </tr>
+        </table>
+    </header>
+
     <article>
         <table cellspacing="10">
             <tr>
                 <td>
-                  <img
-                    src="imagen/libros.jpg"
-                    alt=""
-                    width="290">
+                    <img src="imagen/libros.jpg" alt="" width="290">
                 </td>
-                <td> 
-                <h2>Descubre el placer de leer juntos</h2>
-                <p>Nuestro club de lectura te invita a explorar nuevos mundos, compartir<br> 
-                ideas y conectar con otros amantes de los libros. Cada mes, seleccionamos<br>
-                un libro fascinante para discutir y disfrutar</p>
-                <nav>
-                    <ul style="list-style-type:none;">
-                        <li>
-                            <a href="#">
-                                ver el libro del mes
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                <td>
+                    <h2>Descubre el placer de leer juntos</h2>
+                    <p>Nuestro club de lectura te invita a explorar nuevos mundos, compartir<br>
+                        ideas y conectar con otros amantes de los libros. Cada mes, seleccionamos<br>
+                        un libro fascinante para discutir y disfrutar</p>
+                    <button >
+                        ver el libro del mes
+                    </button>
                 </td>
             </tr>
         </table>
-            
+
     </article>
 
     <article>
-      <table>
-        <tr>
-            <td>
-                <h2>
-                   Libro del Mes 
-                </h2>
-                <h3>
-                    El Jardín Secreto
-                </h3>
-                <p>    
-                    Una joven descubre un jardín abandonado que guarda secretos y magia, transformando su vida y la de<br>
-                    quienes la rodean
-                </p>
-            </td>
-            <td>
-                <img src="imagen/libro-historico.jpg" 
-                alt="libro historico del mundo Uuu"
-                width="200">
-            </td>
-        </tr>
-      </table>  
+        <table>
+            <tr>
+                <td>
+                    <h2>
+                        Libro del Mes
+                    </h2>
+                    <h3>
+                        El Jardín Secreto
+                    </h3>
+                    <p>
+                        Una joven descubre un jardín abandonado que guarda secretos y magia, transformando su vida y la
+                        de<br>
+                        quienes la rodean
+                    </p>
+                    <button>
+                        ver más
+                    </button>
+                </td>
+                <td>
+                    <img src="imagen/libro-historico.jpg" alt="libro historico del mundo Uuu" width="200">
+                </td>
+            </tr>
+        </table>
     </article>
 
     <article>
@@ -108,27 +119,26 @@
 
     <article>
         <h2>Libros Leídos Anteriores Meses</h2>
-        <img src="imagen/diario1.png" alt="libro 1"
-        width="150">
+        <img src="imagen/diario1.png" alt="libro 1" width="150">
         <cite><br>El Gran Esteban</cite>
         <address>F. Scott Fitzgerald</address>
 
-        <img src="imagen/diario2.png" alt="libro 2"
-        width="135">
+        <img src="imagen/diario2.png" alt="libro 2" width="135">
         <cite><br>Cien Años de Soledad</cite>
         <address>Gabriel García Márquez</address>
 
-        <img src="imagen/diario3.png" alt="libro 3"
-        width="110">
+        <img src="imagen/diario3.png" alt="libro 3" width="110">
         <cite><br> Orgullo y Prejuicio</cite>
         <address>Jane Austen</address>
-        
+
 
     </article>
 
-    <footer>    
-    <hr>    
-    <small>&copy; © 2024 Book Club. Todos los derechos reservados</small>
-  </footer>
+    <footer>
+        <hr>
+        <small>&copy; © 2024 Book Club. Todos los derechos reservados "los libros fueros modificados por derecho de
+            autor"</small>
+    </footer>
 </body>
+
 </html>
