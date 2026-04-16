@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Inscripción WebConf 2026</legend>
+        <p>Completa el formulario para reservar tu lugar. Los campos con * son obligatorios.</p>
+        <label>① Datos Personales</label>
+        <hr>
+        <label for="nombre">Nombre *</label>
+        <input type="text" id="nombre" name="nombre" 
+                placeholder="Ej. Ana" maxlength="50" required>
+        
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido"
+                placeholder="Ej. Quispe" maxlength="50" required><br><br>
+                
+        <label for="email">Correo *</label> 
+        <input type="email" id="email" name="correo" placeholder="correo@ejemplo.com">       
+        
+        <label for="telefono">Telefono</label> 
+        <input type="tel" id="telefono" name="telefono" placeholder="72345678" maxlength="50" pattern="[0-9]{8}"><br><br>
+
+        <label for="nacimiento">Fecha de nacimiento</label><br>
+        <input type="date" id="nacimiento" name="nacimiento" placeholder="Ej. 2002-05-14" maxlength="50" required><br><br>
+        
+        <label>② Información Académica</label>
+        <hr>
+        <label for="carrera">Carrera</label>
+        <select name="carrera">
+            <option value="">-- Selecciona --</option>
+            <option value="inf">Informatica</option>
+            <option value="sis">Sistemas</option>
+            <option value="mar">Marketing</option>
+            <option value="tur">Turismo</option>
+            <option value="der">Derecho</option>
+            <option value="cont">Contabilidad</option>
+        </select>
+
+        <label for="estudio">Año de Estudio</label> 
+        <input type="number" id="estudio" name="estudio" placeholder="3" maxlength="50" max="5"><br><br>
+    
+        <label for="ciudad">Ciudad</label> 
+        <input list="ciudades" id="ciudad" name="ciudad" placeholder="La paz"><br><br>
+        <datalist id="ciudades">
+            <option value="La Paz">
+            <option value="Cochabamba">
+            <option value="Santa Cruz">
+            <option value="Tarija">
+        </datalist>
+    
+        <label for="motivo">¿Por qué quieres asistir?</label><br>
+        <textarea name="motivo" id="motivo" rows="4"
+            placeholder="Me interesa aprender sobre..." cols="60">
+            
+        </textarea> <br><br>
+    
+        <label>③ Preferencias del Evento</label>
+        <hr>
+        <label for="modalidad">Modalidad</label><br>
+        
+        <input type="radio" id="presencial" name="nivel" value="presencial" checked>
+        <label for="basico">Presencial</label>
+        
+        <input type="radio" id="virtual" name="nivel" value="virtual">
+        <label for="virtual">Virtual</label>
+
+        <input type="radio" id="semi-presencial" name="nivel" value="semi-presencial">
+        <label for="semi-presencial">Semi-Presencial</label><br>
+
+        <p>Taller de interes</p>
+        <input type="checkbox" id="html" name="talleres" value="html">
+        <label for="html">HTML & CSS Avanzado</label><br>
+        
+        <input type="checkbox" id="java" name="talleres" value="java" checked>
+        <label for="java">JavaScript Moderno</label><br>
+        
+        <input type="checkbox" id="web" name="talleres" value="web">
+        <label for="web">Accesibilidad Web</label><br>
+        
+        <input type="checkbox" id="movil" name="talleres" value="movil">
+        <label for="movil">Desarrollo APK movil</label><br>
+        
+        <input type="checkbox" id="datos" name="talleres" value="datos">
+        <label for="datos">Base de Datos relacional</label><br><br>
+
+        <label for="fondo">Color de gafete</label><br>
+        <input type="color" id="fondo" name="color_gafete" value="#6b3fa0"><br><br>
+
+        <input type="hidden" name="evento_id" value="2026-webconf">
+        
+        <button type="submit">Inscribirme</button>
+        <button type="reset">Limpiar Formulario</button>
+    </fieldset>
+</body>
+
+</html>
